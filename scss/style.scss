@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  .blok-row {
+    padding-top: 50px;
+
+    h1 {
+      font-size: 45px;
+    }
+
+    .all-users {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      // gap: 40px;
+      justify-content: space-between;
+
+      .row-title {
+        margin-top: 50px;
+        position: relative;
+        background-image: url(/image/bacraund.jpg);
+        background-size: cover;
+        border-radius: 15px;
+        border: 1px solid #696868;
+        width: 300px;
+        height: 230px;
+
+        .title-card {
+          padding: 15px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          .merk {
+            background: none;
+            font-size: 22px;
+          }
+
+          h3 {
+            font-size: 20px;
+          }
+
+          p {
+            font-size: 18px;
+          }
+
+          .btn {
+            width: 265px;
+            position: absolute;
+            bottom: 15px;
+            justify-content: space-between;
+            display: flex;
+            gap: 10px;
+
+            button {
+              background-color: aqua;
+              border: none;
+              padding: 8px 12px;
+              border-radius: 5px;
+              transition: 0.5s;
+
+              &:hover {
+                background: none;
+                border: 2px solid aqua;
+              }
+
+              a {
+                text-decoration: none;
+                color: #000;
+                font-weight: 540;
+                transition: 0.5s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
